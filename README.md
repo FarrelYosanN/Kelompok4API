@@ -25,4 +25,4 @@ PUT
 
 DELETE
 
-![DELETE]()
+![DELETE](https://github.com/FarrelYosanN/Kelompok4API/blob/main/Dokumentasi%20OpenAPI%20Delete.png)
