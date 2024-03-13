@@ -1,0 +1,186 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Penduduk Desa Mojoraos",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8000",
+      "description": "Development server"
+    }
+  ],
+  "paths": {
+    "/penduduk": {
+      "get": {
+        "summary": "Get all penduduk",
+        "responses": {
+          "200": {
+            "description": "List of penduduk",
+            "content": {
+              "application/json": {
+                "example": {
+                  "penduduk": [
+                    {
+                      "id_penduduk": 2,
+                      "nama_penduduk": "Rahmat Kurnia",
+                      "NIK": "333002",
+                      "alamat": "Jl. Gajahmada no 20 Padang"
+                    },
+                    {
+                      "id_penduduk": 3,
+                      "nama_penduduk": "Ahmad Syarif",
+                      "NIK": "333003",
+                      "alamat": "Jl. Airlangga no 25 Padang"
+                    },
+                    {
+                      "id_penduduk": 4,
+                      "nama_penduduk": "Arif Rahman",
+                      "NIK": "333004",
+                      "alamat": "Jl. Garuda no 33 Padang"
+                    },
+                    {
+                      "id_penduduk": 5,
+                      "nama_penduduk": "Moch Habibi ",
+                      "NIK": "333005",
+                      "alamat": "Jl. Rajawali no 22 Padang"
+                    },
+                    {
+                      "id_penduduk": 6,
+                      "nama_penduduk": "Rahmatan Fitra",
+                      "NIK": "333006",
+                      "alamat": "Jl. Pahlawan no 114 Padang"
+                    },
+                    {
+                      "id_penduduk": 7,
+                      "nama_penduduk": "Fitri Muawanah",
+                      "NIK": "333007",
+                      "alamat": "Jl. Rajawali Selatan no 12 Padang"
+                    },
+                    {
+                      "id_penduduk": 8,
+                      "nama_penduduk": "Siti Fitria",
+                      "NIK": "333008",
+                      "alamat": "Jl. Pahlawan no 34 Padang"
+                    },
+                    {
+                      "id_penduduk": 10,
+                      "nama_penduduk": "Jill Valentine",
+                      "NIK": "333011",
+                      "alamat": "Jl. Pahlawan no 99 Padang"
+                    },
+                    {
+                      "id_penduduk": 12,
+                      "nama_penduduk": "Putri Ratna",
+                      "NIK": "333012",
+                      "alamat": "Jl. Mawar Madu no 99 Padang"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Add a new penduduk",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nama_penduduk": {
+                    "type": "string"
+                  },
+                  "NIK": {
+                    "type": "string"
+                  },
+                  "alamat": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Penduduk added successfully"
+          },
+          "400": {
+            "description": "Bad request"
+          }
+        }
+      }
+    },
+    "/penduduk/{id_penduduk}": {
+      "put": {
+        "summary": "Update penduduk by ID",
+        "parameters": [
+          {
+            "name": "id_penduduk",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "description": "ID of the penduduk to update"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nama_penduduk": {
+                    "type": "string"
+                  },
+                  "NIK": {
+                    "type": "string"
+                  },
+                  "alamat": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Penduduk updated successfully"
+          },
+          "404": {
+            "description": "Penduduk not found"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete penduduk by ID",
+        "parameters": [
+          {
+            "name": "id_penduduk",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "description": "ID of the penduduk to delete"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Penduduk deleted successfully"
+          },
+          "404": {
+            "description": "Penduduk not found"
+          }
+        }
+      }
+    }
+  }
+}
