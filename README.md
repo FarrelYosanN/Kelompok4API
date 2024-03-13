@@ -21,7 +21,7 @@ POST
 
 PUT
 
-![PUT]()
+![PUT](https://github.com/FarrelYosanN/Kelompok4API/blob/main/Dokumentasi%20OpenAPI%20Put.png)
 
 DELETE
 
