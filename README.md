@@ -13,7 +13,7 @@ DOKUMENTASI OPENAPI
 
 GET
 
-![GET]()
+![GET](https://github.com/FarrelYosanN/Kelompok4API/blob/main/Dokumentasi%20OpenAPI%20GET.png)
 
 POST
 
