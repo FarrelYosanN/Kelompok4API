@@ -7,4 +7,22 @@ Epa Aprillia					      (22091397024)  : https://github.com/22091397024EpaAprilli
 
 Farrel Yosan Navyansyah			(22091397032)  : https://github.com/FarrelYosanN/Kelompok4API
 
-![SS API]()
+DOKUMENTASI OPENAPI
+
+![Dokumentasi OpenAPI](https://github.com/FarrelYosanN/Kelompok4API/blob/main/SS%20OpenAPI.png)
+
+GET
+
+![GET]()
+
+POST
+
+![POST]()
+
+PUT
+
+![PUT]()
+
+DELETE
+
+![DELETE]()
