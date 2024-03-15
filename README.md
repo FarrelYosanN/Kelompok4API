@@ -5,7 +5,7 @@ Maria Cahya Jayanti				  (22091397017)  : https://github.com/22091397017MariaCah
 
 Epa Aprillia					      (22091397024)  : https://github.com/22091397024EpaAprillia/Kelompok4API 
 
-Farrel Yosan Navyansyah			(22091397032)  : https://github.com/FarrelYosanN/Kelompok4API
+Farrel Yosan Navyansyah			(22091397032)  : https://github.com/FarrelYosanN/TugasAPI
 
 DOKUMENTASI OPENAPI
 
